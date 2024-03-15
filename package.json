@@ -1,8 +1,8 @@
 {
-  "name": "search-pack",
-  "productName": "Search Pack",
+  "name": "searchpack",
+  "productName": "SearchPack",
   "version": "1.0.0",
-  "description": "Manage advanced searches",
+  "description": "SearchPack improves Google and DuckDuckGo search results",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
