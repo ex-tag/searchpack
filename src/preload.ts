@@ -1,3 +1,12 @@
+const { contextBridge, ipcRenderer } = require("electron");
+
+contextBridge.exposeInMainWorld("browserViewApi", {
+  updateUrl: (url: String) => {
+    // console.log(url);
+    ipcRenderer.invoke('updateUrl', url);
+  }
+});
+
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector: any, text: any) => {
     const element = document.getElementById(selector);

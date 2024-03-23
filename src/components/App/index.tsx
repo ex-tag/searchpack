@@ -16,9 +16,11 @@ const App: FunctionComponent = memo((): JSX.Element => {
               </div>
             </div>
           </div>
-          <div className="col">
-            <div className="ratio ratio-16x9">
-              <iframe src="https://www.google.com" />
+          <div className="col mt-3">
+            <div className="row">
+              <div className="col mb-3">
+                {/* <webview src="https://www.github.com/"/> */}
+              </div>
             </div>
           </div>
         </div>
